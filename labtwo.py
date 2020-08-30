@@ -39,14 +39,14 @@ r.glFinish('toon.bmp')
 print("Finalizado")
 
 
-## GOURAD ##
+## TV STATIC ##
 
 # cargar textura y hacer el set
 texture = Texture('model.bmp')
 r.glSetTexture(texture)
 
 # activar shader
-r.active_shader = gourad
+r.active_shader = tvStatic
 
 # fondo negro
 r.glClearColor(0, 0, 0)
@@ -56,6 +56,6 @@ r.glClear()
 print("\nDibujando modelo 3...")
 
 r.glLoadObj('model.obj', (400, 400, 0), (300, 300, 300))
-r.glFinish('gourad.bmp')
+r.glFinish('tv_static.bmp')
 
-print("Finalizado")
+print("\nFinalizado")
